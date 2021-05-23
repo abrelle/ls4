@@ -53,11 +53,11 @@ int main(int argc, char** argv) {
     cout << "Number of primes " << countPrimes(numberArray, upperBound) << endl;
     
 	auto stop = high_resolution_clock::now();
-	auto durationMili = duration_cast<milliseconds>(stop - start);
-	auto durationSec = duration_cast<seconds>(stop - start);
+	auto durationMicro = duration_cast<microseconds>(stop - start);
 	
-	cout << endl << "Duration in milliseconds " << durationMili.count() << endl;
-	cout << "Duration in seconds " << durationSec.count() << endl;
+	
+	cout << endl << "Duration in microseconds " << durationMicro.count() << endl;
+	
 
     return 0;
 }
