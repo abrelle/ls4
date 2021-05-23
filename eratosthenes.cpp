@@ -1,9 +1,11 @@
 #include <iostream>
 #include <bits/stdc++.h>
+#include <chrono>
 #include <math.h>
 #include <omp.h>
 
 using namespace std;
+using namespace std::chrono;
 
 
 void initArray(int* array, int upperBound){
@@ -52,9 +54,15 @@ int main(int argc, char** argv) {
     int upperBound = atoi(argv[1]);
     
     int* numberArray = new int[upperBound];
+	auto start = high_resolution_clock::now();
     initArray(numberArray, upperBound);
     eratosthenes(numberArray, upperBound);
     cout << "Number of primes " << countPrimes(numberArray, upperBound) << endl;
+	auto stop = high_resolution_clock::now();
+	auto durationMili = duration_cast<miliseconds>(stop - start);
+	auto durationSec = duration_cast<seconds>(stop - start);
+	cout << endl << "Duration in miliseconds " << durationMili << endl;
+	cout << "Duration in seconds " << durationMili << endl;
     cout << endl << "Processors Used = " << omp_get_num_procs() << endl;
     cout << "Threads Used = " << omp_get_max_threads() << endl;
     return 0;
