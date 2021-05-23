@@ -59,10 +59,10 @@ int main(int argc, char** argv) {
     eratosthenes(numberArray, upperBound);
     cout << "Number of primes " << countPrimes(numberArray, upperBound) << endl;
 	auto stop = high_resolution_clock::now();
-	auto durationMili = duration_cast<miliseconds>(stop - start);
+	auto durationMili = duration_cast<milliseconds>(stop - start);
 	auto durationSec = duration_cast<seconds>(stop - start);
-	cout << endl << "Duration in miliseconds " << durationMili << endl;
-	cout << "Duration in seconds " << durationMili << endl;
+	cout << endl << "Duration in milliseconds " << durationMili.count() << endl;
+	cout << "Duration in seconds " << durationSec.count() << endl;
     cout << endl << "Processors Used = " << omp_get_num_procs() << endl;
     cout << "Threads Used = " << omp_get_max_threads() << endl;
     return 0;
