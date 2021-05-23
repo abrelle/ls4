@@ -104,9 +104,9 @@ int main(int argc, char** argv) {
 			MPI_Recv(&receivedPrimes, 1, MPI_INT, i, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 			totalPrimes += receivedPrimes;
 		}
-		cout << " Total number of primes " << totalPrimes << endl;
+		cout << endl <<  "Total number of primes " << totalPrimes << endl;
 		auto durationMicro = duration_cast<microseconds>(stop - start);
-		cout << endl << "Duration in microseconds " << durationMicro.count() << endl;
+		cout << endl << "Duration in microseconds " << durationMicro.count() << endl << endl;
 	}
     
     free(myArray);

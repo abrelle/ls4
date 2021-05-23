@@ -1,0 +1,272 @@
+eratosthenes.cpp: In function 'int main(int, char**)':
+eratosthenes.cpp:62:36: error: 'miliseconds' was not declared in this scope
+  auto durationMili = duration_cast<miliseconds>(stop - start);
+                                    ^~~~~~~~~~~
+eratosthenes.cpp:62:61: error: no matching function for call to 'duration_cast(std::__success_type<std::chrono::duration<long int, std::ratio<1l, 1000000000l> > >::type)'
+  auto durationMili = duration_cast<miliseconds>(stop - start);
+                                                             ^
+In file included from /usr/include/x86_64-linux-gnu/c++/6/bits/stdc++.h:101:0,
+                 from eratosthenes.cpp:2:
+/usr/include/c++/6/chrono:194:7: note: candidate: template<class _ToDur, class _Rep, class _Period> constexpr typename std::enable_if<std::chrono::__is_duration<_Tp>::value, _ToDur>::type std::chrono::duration_cast(const std::chrono::duration<_Rep, _Period>&)
+       duration_cast(const duration<_Rep, _Period>& __d)
+       ^~~~~~~~~~~~~
+/usr/include/c++/6/chrono:194:7: note:   template argument deduction/substitution failed:
+eratosthenes.cpp:62:61: error: template argument 1 is invalid
+  auto durationMili = duration_cast<miliseconds>(stop - start);
+                                                             ^
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 2
+Threads Used = 2
+Number of primes 664579
+
+Processors Used = 2
+Threads Used = 2
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 2
+Threads Used = 2
+Number of primes 664579
+
+Processors Used = 2
+Threads Used = 2
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6
+Number of primes 664579
+
+Processors Used = 6
+Threads Used = 6

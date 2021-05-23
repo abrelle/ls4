@@ -2,5 +2,5 @@
 #SBATCH -p short
 #SBATCH -n64
 #SBATCH -C beta
-g++ -o eratosthenes -fopenmp eratosthenes.cpp
-mpirun ./eratosthenes 1000000
+mpic++ concurrent_eratosthenes.cpp -o concurrent_eratosthenes
+mpirun ./concurrent_eratosthenes 1000000
