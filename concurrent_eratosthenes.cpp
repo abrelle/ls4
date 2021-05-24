@@ -51,8 +51,6 @@ int countPrimes(int* array, int upperBound){
 }
 
 int main(int argc, char** argv) {
-
-	auto start = high_resolution_clock::now();
   	
   	int upperBound = atoi(argv[1]);
     
@@ -76,6 +74,7 @@ int main(int argc, char** argv) {
     
     //cout << "Process " << rank << " is ready" << endl;
 	MPI_Barrier(MPI_COMM_WORLD);
+	double start = MPI_Wtime();
 	
 	while (lastPrime <= numOfSieves && lastPrime != -1){
 		
@@ -94,19 +93,20 @@ int main(int argc, char** argv) {
 	MPI_Send(&numPrimes, 1, MPI_INT, 0, 1, MPI_COMM_WORLD);
 	
 	MPI_Barrier(MPI_COMM_WORLD);
+	double stop = MPI_Wtime();
 	
 	
 	int receivedPrimes;
 	int totalPrimes = 0;
 	if(rank == 0){
-		auto stop = high_resolution_clock::now();
+	
 		for(int i = 0; i < nproc; ++i){
 			MPI_Recv(&receivedPrimes, 1, MPI_INT, i, 1, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
 			totalPrimes += receivedPrimes;
 		}
 		cout << endl <<  "Total number of primes " << totalPrimes << endl;
-		auto durationMicro = duration_cast<microseconds>(stop - start);
-		cout << endl << "Duration in microseconds " << durationMicro.count() << endl << endl;
+		//auto durationMicro = duration_cast<microseconds>(stop - start);
+		cout << endl << "Duration in microseconds " << (stop - start)<< endl << endl;
 	}
     
     free(myArray);
